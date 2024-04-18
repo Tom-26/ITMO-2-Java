@@ -1,0 +1,20 @@
+{
+  "id": 6,
+  "name": "Chapman's Peak Drive",
+  "coordinates": {
+    "x": -34.091612,
+    "y": 18
+  },
+  "creationDate": "2021-06-01T00:00:00Z",
+  "from": {
+    "x": -34.091612,
+    "y": 18,
+    "name": "Noordhoek"
+  },
+  "to": {
+    "x": -33.959469,
+    "y": 18,
+    "name": "Hout Bay"
+  },
+  "distance": 9
+}

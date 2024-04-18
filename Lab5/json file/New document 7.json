@@ -1,0 +1,20 @@
+ {
+  "id": 7,
+  "name": "Jebel Hafeet Mountain Road",
+  "coordinates": {
+    "x": 24.039166,
+    "y": 55
+  },
+  "creationDate": "2021-07-01T00:00:00Z",
+  "from": {
+    "x": 24.039166,
+    "y": 55,
+    "name": "Al Ain"
+  },
+  "to": {
+    "x": 24.059444,
+    "y": 55,
+    "name": "Mountain Summit"
+  },
+  "distance": 11
+}

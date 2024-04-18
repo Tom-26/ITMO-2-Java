@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "name": "Pacific Coast Highway",
+  "coordinates": {
+    "x": 34.0522,
+    "y": -118
+  },
+  "creationDate": "2021-01-01T00:00:00Z",
+  "from": {
+    "x": 36.7783,
+    "y": -119,
+    "name": "California"
+  },
+  "to": {
+    "x": 34.0522,
+    "y": -118,
+    "name": "Los Angeles"
+  },
+  "distance": 600
+}

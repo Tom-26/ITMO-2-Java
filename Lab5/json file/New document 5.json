@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "name": "Atlantic Road",
+  "coordinates": {
+    "x": 63.073785,
+    "y": 7
+  },
+  "creationDate": "2021-05-01T00:00:00Z",
+  "from": {
+    "x": 63.073785,
+    "y": 7,
+    "name": "Bud"
+  },
+  "to": {
+    "x": 63.026293,
+    "y": 7,
+    "name": "Kristiansund"
+  },
+  "distance": 36
+}

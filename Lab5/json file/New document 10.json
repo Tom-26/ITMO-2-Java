@@ -1,0 +1,20 @@
+{
+  "id": 10,
+  "name": "Blue Ridge Parkway",
+  "coordinates": {
+    "x": 35.362023,
+    "y": -82
+  },
+  "creationDate": "2021-10-01T00:00:00Z",
+  "from": {
+    "x": 35.362023,
+    "y": -82,
+    "name": "Great Smoky Mountains"
+  },
+  "to": {
+    "x": 37.771907,
+    "y": -79,
+    "name": "Shenandoah"
+  },
+  "distance": 755
+}
