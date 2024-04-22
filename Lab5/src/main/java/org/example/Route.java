@@ -1,27 +1,30 @@
 package org.example;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Route implements Comparable<Route> {
     private static final AtomicLong ID_GENERATOR = new AtomicLong(0);
 
-    public Route() {
-        this.id = ID_GENERATOR.incrementAndGet();// логика генерации ID
+    public Route(String name, Coordinates coordinates, String creationDate, Location from, Location to, long distance) {
         this.name = name;
         this.coordinates = coordinates;
-        this.creationDate = java.time.ZonedDateTime.now(); // Текущее время и дата
+        this.creationDate = DateTimeFormatter.ISO_ZONED_DATE_TIME.format(ZonedDateTime.now()); //getCreationDate();
         this.from = from;
         this.to = to;
         this.distance = distance;
+        this.id = ID_GENERATOR.incrementAndGet();
     }
 
     private Long id; // Уникальный идентификатор
     private String name; // Имя маршрута
     private Coordinates coordinates; // Координаты
-    private java.time.ZonedDateTime creationDate; // Дата создания
+    private String  creationDate; // Дата создания
     private Location from; // Начальное местоположение
     private Location to; // Конечное местоположение
     private long distance; // Длина маршрута
+
+
 
     public Long getId() {
         return id;
@@ -66,16 +69,18 @@ public class Route implements Comparable<Route> {
             this.coordinates = coordinates;
         }
     }
-
     public ZonedDateTime getCreationDate() {
-        return creationDate;
+        return ZonedDateTime.now();  // Always returns the current time
     }
+   /* public ZonedDateTime getCreationDate() {
+        return creationDate;
+    }*/
 
     public void setCreationDate(ZonedDateTime creationDate) {
         if (creationDate == null) {
             throw new IllegalArgumentException("'Cretion Date' не может быть null.");
         } else {
-            this.creationDate = creationDate;
+            this.creationDate = String.valueOf(creationDate);
         }
     }
 
@@ -120,7 +125,7 @@ public class Route implements Comparable<Route> {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", coordinates=" + coordinates +
-                ", creationDate=" + creationDate +
+                ", creationDate=" + getCreationDate() +
                 ", from=" + from +
                 ", to=" + to +
                 ", distance=" + distance +

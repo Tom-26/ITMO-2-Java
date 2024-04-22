@@ -3,7 +3,7 @@ package org.example.Commands.Realize;
 import org.example.CollectionManager;
 import org.example.Commands.BaseInterfaceCommand;
 
-import java.util.Arrays;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,6 +41,12 @@ public class CommandExecutor {
             System.out.println("Команда не найдена: " + commandName);
             return;
         }
-        command.execute(args);
+        try {
+            command.execute(args);
+        } catch (IOException e) {
+            System.err.println("Ошибка ввода/вывода при выполнении команды: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Произошла ошибка: " + e.getMessage());
+        }
     }
 }

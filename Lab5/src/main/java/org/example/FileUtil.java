@@ -16,13 +16,13 @@ public class FileUtil {
             .registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter())
             .create();
 
-    public static void writeFile(String filePath, String content) throws IOException {
+    /*public static void writeFile(String filePath, String content) throws IOException {
         try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath))) {
             byte[] bytes = content.getBytes(StandardCharsets.UTF_8);
             bos.write(bytes);
             bos.flush();
         }
-    }
+    }*/
 
     public static String readFile(String filePath) throws IOException {
         StringBuilder contentBuilder = new StringBuilder();
@@ -39,6 +39,9 @@ public class FileUtil {
     public static <T> void writeToJson(String filePath, T objectToWrite) throws IOException {
         String json = gson.toJson(objectToWrite);
         writeFile(filePath, json);
+    }
+
+    private static void writeFile(String filePath, String json) {
     }
 
     public static <T> T readFromJson(String filePath, Class<T> classOfT) throws IOException {
