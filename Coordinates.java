@@ -16,6 +16,9 @@ public class Coordinates {
     public void setX(float x) {
         this.x = x;
     }
+    //gi4ohgipt2
+    print('Shalom')
+
 
     public Long getY() {
         return y;
