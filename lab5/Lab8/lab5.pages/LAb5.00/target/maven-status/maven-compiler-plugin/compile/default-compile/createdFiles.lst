@@ -1,0 +1,16 @@
+org/example/models/Coordinates.class
+org/example/dao/UserDao.class
+org/example/Main.class
+org/example/ConsoleCommandExecutor.class
+org/example/Commands/Realize/HelpCommand.class
+org/example/models/Location.class
+org/example/Commands/Realize/LoginCommand.class
+org/example/Console.class
+org/example/models/Route.class
+org/example/Commands/Realize/MaxByIdCommand.class
+org/example/Commands/Realize/RemoveAtCommand.class
+org/example/services/AuthService.class
+org/example/Commands/BaseInterfaceCommand.class
+org/example/Commands/Realize/ShowCommand.class
+org/example/models/User.class
+org/example/CollectionManager.class

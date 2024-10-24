@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "name": "Route 66",
+  "coordinates": {
+    "x": 35.20105,
+    "y": -91
+  },
+  "creationDate": "2021-02-01T00:00:00Z",
+  "from": {
+    "x": 37.7749,
+    "y": -122,
+    "name": "San Francisco"
+  },
+  "to": {
+    "x": 40.7128,
+    "y": -74,
+    "name": "New York"
+  },
+  "distance": 4800
+}

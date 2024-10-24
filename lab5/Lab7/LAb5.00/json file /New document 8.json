@@ -1,0 +1,20 @@
+{
+  "id": 8,
+  "name": "Amalfi Coast Road",
+  "coordinates": {
+    "x": 40.634003,
+    "y": 14
+  },
+  "creationDate": "2021-08-01T00:00:00Z",
+  "from": {
+    "x": 40.634003,
+    "y": 14,
+    "name": "Sorrento"
+  },
+  "to": {
+    "x": 40.628053,
+    "y": 14,
+    "name": "Amalfi"
+  },
+  "distance": 52
+}

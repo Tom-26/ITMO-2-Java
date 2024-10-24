@@ -1,0 +1,20 @@
+{
+  "id": 3,
+  "name": "Great Ocean Road",
+  "coordinates": {
+    "x": -38.680564,
+    "y": 143
+  },
+  "creationDate": "2021-03-01T00:00:00Z",
+  "from": {
+    "x": -38.680564,
+    "y": 143,
+    "name": "Torquay"
+  },
+  "to": {
+    "x": -38.757167,
+    "y": 143,
+    "name": "Allansford"
+  },
+  "distance": 243
+}

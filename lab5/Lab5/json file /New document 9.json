@@ -1,0 +1,20 @@
+{
+  "id": 9,
+  "name": "Stelvio Pass",
+  "coordinates": {
+    "x": 46.528634,
+    "y": 10
+  },
+  "creationDate": "2021-09-01T00:00:00Z",
+  "from": {
+    "x": 46.528634,
+    "y": 10,
+    "name": "Bormio"
+  },
+  "to": {
+    "x": 46.529286,
+    "y": 10,
+    "name": "Stilfs"
+  },
+  "distance": 21
+}
